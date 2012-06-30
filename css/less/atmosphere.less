@@ -1,0 +1,90 @@
+/* The clearfix method */
+@import "mixins.less";
+
+/* Basic Styling of the Body */
+body {
+	background: #e0e0e0 url(/demo/responsive-nav/img/background.png);
+	margin: 0 auto;
+	color: black;
+	text-align: center;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-weight: 300 !important;
+	font-size: 10px;
+	position: relative;
+	overflow: auto;
+	max-width: 1300px;
+	}
+
+
+/* Le Header */
+header {
+	padding: 20px 0;
+	position: relative;
+	
+	h1#branding a {
+		font-family: "Euphoria Script", cursive;
+		font-weight: normal;
+		text-decoration: none;
+		
+		&:link,
+		&:visited {
+			color: #000;
+			}
+		
+		&:hover,
+		&:active {
+			color: #a67b45;
+			text-decoration: none;
+			}
+		} // end: header > a
+		
+	h2#tagline {
+		text-align: center;
+		font-size: 1em;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #444;
+		font-family: Lato, sans-serif;
+		}
+	
+	/* The common properties in the NAV element */
+	nav {
+		#gradient .vertical(#fff, #ededed);
+		.box-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
+		font-family: Lato, sans-serif;
+		font-size: 1.5em;
+		}
+	
+	/* Making sure lists have no margin/padding */
+	ul#menu {
+		margin: 0 !important;
+		padding: 0 !important;
+		}
+		
+	} //end: header
+
+/* The content and footer sections */
+section.content,
+footer {
+	padding: 10px 20px;
+	background: #FFF;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	text-align: left;
+	.box-shadow(0 0 3px 1px rgba(0,0,0,.2));
+	}
+	
+footer {
+	margin: 20px 0;
+	}
+	
+/* Dimension (or rather, just the Screen Width) display */
+#dimensions {
+	position: fixed;
+	right: 10px;
+	bottom: 0px;
+	background: #000;
+	font-size: 13px;
+	color: #FFF;
+	padding: 10px;
+	}

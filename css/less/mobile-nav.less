@@ -1,0 +1,159 @@
+@import "mixins.less";
+
+/* The NAV element in mobile devices */
+header nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  zoom: 1;
+  width: auto;
+  text-align: left;
+  
+  height: 40px;
+  width: 100%;
+}
+
+/* The button on the top-right */
+nav .btn-navbar {
+  position: fixed;
+  right: 10px;
+  top: 6px;
+  
+  padding: 7px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075)");
+  
+  &:active {
+  	background-color: #e6e6e6;
+  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d9d9d9), to(#ffffff));
+  	background-image: -webkit-linear-gradient(top, #ffffff, #d9d9d9);
+  	background-color: #d9d9d9;
+  	background-image: -moz-linear-gradient(top, #d9d9d9, #ffffff);
+  	background-image: -ms-linear-gradient(top, #d9d9d9, #ffffff);
+  	background-image: -o-linear-gradient(top, #d9d9d9, #ffffff);
+  	background-image: linear-gradient(top, #d9d9d9, #ffffff);
+  	background-repeat: repeat-x;
+  	}
+}
+nav .btn-navbar .icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #000;
+  .border-radius(1px);
+  .box-shadow(0 1px 0 rgba(0,0,0,.25));
+}
+nav .btn-navbar.active .icon-bar {
+	background-color: #a67b45;
+	.box-shadow(inset 0 1px 0 rgba(0,0,0,.25));
+}
+.btn-navbar .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
+/* The unordered list with the menu */
+.overthrow-enabled .overthrow {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+ul#menu {
+	background: #000;
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 0;
+ 	
+ 	width: 100%;
+ 	font-size: 15px !important;	
+	
+//	overflow: auto;
+//	-webkit-overflow-scrolling: touch;
+
+	overflow-x: hidden;
+	-ms-overflow-x: hidden;
+	
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+	& > * {
+	    -webkit-transform: translateZ(0px);
+	}
+
+	li {
+		display: block;
+		height: 40px;
+		width: 100%;
+		border-bottom: 1px solid #ccc; 
+		background-color: #ededed;
+		background-repeat: repeat-x;
+		background-image: -moz-linear-gradient(top, #ffffff, #ededed);
+		background-image: -ms-linear-gradient(top, #ffffff, #ededed);
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #ededed));
+		background-image: -webkit-linear-gradient(top, #ffffff, #ededed);
+		background-image: -o-linear-gradient(top, #ffffff, #ededed);
+		background-image: linear-gradient(top, #ffffff, #ededed);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+		
+		&:last-child {
+			border: none;
+			}
+		
+		&.hasChildren {
+			height: auto !important;
+			
+			ul {
+				display: none;
+				margin: 0 !important;
+				padding:  0 0 0 20px !important;
+				
+				li {
+					background: none;
+					}
+				}
+			
+			}
+			
+			a {
+				display: block;
+				text-decoration: none;
+				padding: 12px 10px;
+				font-weight: normal; 
+				
+				span {display: block;}
+				
+				&:link,
+				&:visited {
+					color: #666;
+					text-decoration: none;
+					outline: none;
+					}
+				
+				&:hover,
+				&:active {
+					color: #a67b45;
+					text-decoration: none;
+					outline: none;
+					background: rgba(0, 0, 0, 0.05);
+					}
+								
+				}
+		
+		}
+		
+		li.hasChildren a > span {
+			background: url(/demo/responsive-nav/img/sprite.png);
+			background-position: right -97px !important;
+			background-repeat: no-repeat;
+			}
+			
+		li.hasChildren a:hover > span,
+		li.hasChildren.hover > a span {
+			background-position: right -138px !important;
+			}
+		
+} // end:ul#menu

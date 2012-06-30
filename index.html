@@ -1,0 +1,248 @@
+<!doctype html>
+<!--[if IEMobile 7]><html class="no-js iem7"><![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<!-- 
+	
+	Hello, Curious Stranger.
+	
+	The code borrowed from frameworks such as 320-and-Up, Bootstrap and Mobile Boilerplate are mostly under very permissive Open Source licenses.
+	
+	The code written by me is - wait for it - Public Domain. Copy, hack, sell wholesale and do whatever pleases you. A little credit would be appreciated but not mandatory.
+	
+	May be the source be with you.
+	
+	-->
+	
+	<title>Responsive Navigation Menu</title>
+	<meta name="description" content="A hands-on tutorial on how to build an advanced Responsive Navigation Menu.">
+	<meta name="author" content="Saddam Azad - UI Designer and Front-end Web Developer. London, UK.">
+	
+	<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+	<!-- For all browsers -->
+	<link href='http://fonts.googleapis.com/css?family=Euphoria+Script|Lato' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="css/normalise.css" media="screen">
+	<link rel="stylesheet" href="css/atmosphere.css" media="screen">
+	
+	<!-- Media Queries -->
+	<link  rel="stylesheet" href="css/mobile-nav.css" media="screen and (min-width: 320px) and (max-width: 1024px)">
+	
+	<link  rel="stylesheet" href="css/smartphone.css" media="screen and (min-width:320px) and (max-width:480px)">
+	<link  rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 481px) and (max-width: 767px)">
+	<link  rel="stylesheet" href="css/ipad.css" media="screen and (min-width: 768px) and (max-width: 1024px)">
+	
+	<link  rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1025px)">
+	
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/desktop.css" media="screen">
+	<![endif]-->
+		
+	<!-- JavaScript -->
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="js/selectivizr-1.0.3.min.js"></script>
+	<![endif]-->
+	<script src="js/modernizr-2.5.3.min.js"></script>
+	
+	<meta http-equiv="cleartype" content="on">
+</head>
+
+<body class="clearfix">
+
+<header role="banner" class="clearfix">
+	<h1 id="branding"><a href="/demo/responsive-nav-320andup/">Responsive Navigation</a></h1>
+	<h2 id="tagline">A beautifully crafted responsive navigation menu</h2>
+
+	<nav>
+		
+	<a data-toggle="collapse" class="btn btn-navbar">
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	</a>
+	
+		<ul id="menu" class="overthrow">
+			<li><a href="#" tabindex="1" accesskey="h">Home</a></li>
+			<li class="breakfast active"><a href="#" tabindex="2">Breakfast</a>
+				<ul>
+					<li class="bread"><a href="#" tabindex="3">Bread</a>
+						<ul>
+							<li class="french"><a href="#">French</a></li>
+							<li class="english"><a href="#">White</a></li>
+							<li class="brown"><a href="#">Brown</a></li>
+						</ul>
+					</li>
+					<li class="eggs"><a href="#">Eggs</a>
+		    			<ul>
+		    				<li><a href="#">Eggs Benedict</a></li>
+		    				<li><a href="#">Deviled Eggs</a></li>
+		    				<li><a href="#">Scotch Eggs</a></li>
+		    				<li><a href="#">Scrambled Eggs</a></li>
+		    			</ul>
+					</li>
+					<li class="bacon"><a href="#">Bacon</a>
+						<ul>
+							<li><a href="#">Canadian</a></li>
+							<li><a href="#">Southern</a></li>
+							<li><a href="#">Crisp</a></li>
+						</ul>
+					</li>
+					<li class="jam"><a href="#">Preserves</a>
+						<ul>
+							<li><a href="#">Raspberry</a></li>
+							<li><a href="#">Gooseberry</a></li>
+							<li><a href="#">Strawberry</a></li>
+							<li><a href="#">Blackberry</a></li>
+						</ul>
+					</li>
+					<li class="coffee"><a href="#">Coffee</a>
+						<ul>
+							<li><a href="#">Cappuccino</a></li>
+							<li><a href="#">Latte</a></li>
+							<li><a href="#">Espresso</a></li>
+							<li><a href="#">Macchiato</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="brunch"><a href="#">Brunch</a>
+				<ul>
+					<li><a href="#">Scones &amp; Muffins</a>
+						<ul>
+							<li><a href="#">Chocolate Muffin</a>
+								<ul>
+									<li><a href="#">Double Chocolate</a></li>
+									<li><a href="#">Triple Chocolate</a></li>
+									<li><a href="#">Chocolate Chip</a></li>
+									<li><a href="#">Chocolate Cookie Crunch</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Cranberry Muffin</a></li>
+							<li><a href="#">Date &amp; Nut Muffin</a></li>
+							<li><a href="#">Raisin Spice Muffin</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Waffles</a>
+						<ul>
+							<li><a href="#">Chocolate syrup</a></li>
+							<li><a href="#">Pumpkin-Ginger</a></li>
+						</ul>
+					</li>
+					<li class="bacon"><a href="#">Bacon</a>
+						<ul>
+							<li><a href="#">Canadian</a></li>
+							<li><a href="#">Southern</a></li>
+							<li><a href="#">Crisp</a></li>
+						</ul>
+					</li>
+					<li class="jam"><a href="#">Pancakes</a></li>
+				</ul>
+			</li>	
+			<li class="lunch"><a href="#">Lunch</a>
+				<ul>
+					<li class="bread"><a href="#">Chicken</a>
+						<ul>
+							<li class="french"><a href="#">Roast</a></li>
+							<li class="english"><a href="#">Broast</a></li>
+							<li class="brown"><a href="#">Grilled</a></li>
+						</ul>
+					</li>
+					<li class="eggs"><a href="#">Beef</a>
+						<ul>
+							<li><a href="#">Roasted with Peppers</a></li>
+							<li><a href="#">T-bone Steak</a></li>
+							<li><a href="#">Sirloin Steak</a></li>
+							<li><a href="#">Prime Rib</a></li>
+						</ul>
+					</li>
+					<li class="bacon"><a href="#">Lamb</a>
+						<ul>
+							<li><a href="#">Roasted with Potato</a></li>
+							<li><a href="#">Stewed with Guiness</a></li>
+							<li><a href="#">Stir Fry with Mushrooms</a></li>
+						</ul>
+					</li>
+					<li class="salad"><a href="#">Salad</a>
+						<ul>
+							<li><a href="#">Caesar Salad</a></li>
+							<li><a href="#">Avocado &amp; Papper</a></li>
+							<li><a href="#">Shrimp &amp; Couscous</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="tea"><a href="#">Tea</a>
+				<ul>
+					<li><a href="#">English</a></li>
+					<li><a href="#">Earl Grey</a></li>
+					<li><a href="#">Green Tea</a></li>
+					<li><a href="#">Camomile</a></li>
+				</ul>
+			</li>
+			<li class="dinner"><a href="#">Dinner</a>
+				<ul>
+					<li class="bread"><a href="#">Chicken</a></li>
+					<li class="eggs"><a href="#">Beef</a</li>
+					<li class="bacon"><a href="#">Lamb</a></li>
+					<li class="jam"><a href="#">Duck</a></li>
+					<li class="coffee"><a href="#">Turkey</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+</header>
+
+<section class="content clearfix">
+
+	<p>You are currently browsing the demo. Please read the full tutorial here: <a href="#">Building a Responsive Navigation Menu</a>.</p>
+
+	<p>This tutorial demonstrates how to build a responsive navigation menu using bits and pieces borrowed from 320 and Up, the Bootstrap Framework and HTML5 Boilerplate Mobile. The hands-on tutorial is designed for web developers of beginner and intermediate levels.</p>
+	
+	<p>The aim of the tutorial is to create a navigation menu that displays native controls on mobile devices and tablets whilst presenting a solid Dropdown Navigation for the desktop users. This is a practical example of how to build essential website components using the Mobile First approach.</p>
+ 
+	<p>The tutorial is authored by Saddam Azad, a freelance User Interface Designer and Front-End Web Developer living in London, United Kingdom. He is an experienced professional with an extensive portfolio of world class  work.</p>
+ 
+
+</section><!-- / content -->
+
+<footer role="contentinfo">
+	<p>Credits:</p>
+	<ul>
+		<li><a href="http://stuffandnonsense.co.uk/projects/320andup/">320 and Up</a>  by Andy Clarke.</li>
+		<li><a href="http://html5boilerplate.com/mobile/">HTML5 Boilerplate Mobile</a>.</li>
+		<li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a> from Twitter.</li>
+		<li><a href="http://">Overthrow</a> by Filament.</li>
+	</ul>
+	<p>The aforementioned are licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>
+</footer>
+
+<div id="dimensions">
+	Screen width: <span class="width"></span>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+<script src="js/plugins.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

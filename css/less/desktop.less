@@ -1,0 +1,171 @@
+@import "mixins.less";
+
+
+/* Bulletproof CSS3 Dropdown Navigation Menu
+ * This snippet of code is freely modifiable and distributable.
+ *
+ * ----------------------------------------------------------------- */
+ 
+html { overflow: hidden; }
+
+.btn-navbar {display: none;}
+
+header {
+
+	margin: 0 auto 20px auto;
+	padding: 0 5px;
+ 
+	h1#branding {
+   		font-size: 4em;
+   		z-index: 1000;
+   		margin: 10px 0 0 0;
+   		}
+   	
+	h2#tagline {
+   		font-size: 1.7em;
+   		margin: 15px 0 5px 0;
+   		}
+ }
+ 
+ section,
+ footer {
+ 	margin: 20px 5px;
+ }
+
+nav {
+	.clearfix();
+	margin: 20px auto 0 auto;
+	width: auto;
+	text-align: left;
+	
+	ul {
+		float: left;
+		.clearfix();
+		width: auto;
+		z-index: 100;
+		font-size: 15px;
+		border-right: 1px solid #e8e8e8;
+		
+		
+		li {
+			float: left;
+			padding: 0 0 10px 0;
+			position: relative;
+			outline: none;
+			line-height: 1.2em;
+			padding: 0 1px 0 0;
+			border-left: 1px solid #e8e8e8;
+			list-style: none;
+			}
+			
+			li.hasChildren a span {
+				padding: 0 20px 0 0;
+				background: url(/demo/responsive-nav/img/sprite.png);
+				background-position: right top;
+				background-repeat: no-repeat;
+				display: block;
+					}
+					
+				li.hasChildren a:hover span,
+				li.hasChildren.hover a span {
+					background-position: right -50px;
+					}
+			
+			a {
+				padding: 15px 20px 15px 20px;
+				font-weight: normal;
+				//outline: none;
+				float: left;
+				display: block;
+				zoom: 1;
+				
+				&:link,
+				&:visited {
+					color: #666;
+					text-decoration: none;
+					#gradient .vertical(#fff, #ededed);
+					.transition(all .3s ease);
+					outline: none;
+					}
+				
+				&:hover,
+				&:active {
+					color: #a67b45;
+					text-decoration: none;
+					#gradient .vertical(#ededed, #fff);
+					.transition(all .1s ease);
+					outline: none;
+					}
+				
+				&:active { .box-shadow(0 0 3px 1px rgba(0,0,0,.3) inset); }
+				// &:focus { .box-shadow(0 0 3px 1px rgba(0,0,0,.3) inset); }
+				
+				} //end: nav ul a
+				
+		} // end: nav ul
+	} // end: nav
+	
+#menu li:hover > ul {
+	display: block;
+	}
+#menu li:hover > a {
+	color: #a67b45;
+	}
+	
+nav li ul {
+	display: none;
+	margin: 0;
+	position: absolute;
+	top: 46px;
+	left: 0px;
+	width: 130px;
+	border: none !important;
+	
+	padding: 2px;
+	background: #999;
+	z-index: 1000;
+	.clearfix();
+	.box-shadow(none);
+	
+	a {
+		float: none;
+	}
+		
+	li {
+		width: 130px;
+		display: block;
+		border-top: 1px solid #cfcfcf;
+		border-left: none !important;
+		}
+		
+	li.hasChildren a > span {
+		background: url(/demo/responsive-nav/img/sprite.png);
+		background-position: right -97px !important;
+		background-repeat: no-repeat;
+		}
+		
+	li.hasChildren a:hover > span,
+	li.hasChildren.hover > a span {
+		background-position: right -138px !important;
+		}
+		
+	} // end: nav li ul
+	
+	.rgba nav li > ul {
+		padding: 10px;
+		left: -10px;
+		background: rgba(0,0,0, 0.1);
+		.border-radius(10px);
+		}
+	
+nav li ul li ul {
+	display: none;
+	left: 130px !important;
+	top: -3px;
+	}
+	.rgba nav li ul li ul {
+		top:  -10px;
+		}
+.rgba nav li > ul {
+	margin-top: -1px;
+}

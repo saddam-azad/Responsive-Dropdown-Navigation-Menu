@@ -1,0 +1,208 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+/* Bulletproof CSS3 Dropdown Navigation Menu
+ * This snippet of code is freely modifiable and distributable.
+ *
+ * ----------------------------------------------------------------- */
+html {
+  overflow: hidden;
+}
+.btn-navbar {
+  display: none;
+}
+header {
+  margin: 0 auto 20px auto;
+  padding: 0 5px;
+}
+header h1#branding {
+  font-size: 4em;
+  z-index: 1000;
+  margin: 10px 0 0 0;
+}
+header h2#tagline {
+  font-size: 1.7em;
+  margin: 15px 0 5px 0;
+}
+section,
+footer {
+  margin: 20px 5px;
+}
+nav {
+  *zoom: 1;
+  margin: 20px auto 0 auto;
+  width: auto;
+  text-align: left;
+}
+nav:before,
+nav:after {
+  display: table;
+  content: "";
+}
+nav:after {
+  clear: both;
+}
+nav ul {
+  float: left;
+  *zoom: 1;
+  width: auto;
+  z-index: 100;
+  font-size: 15px;
+  border-right: 1px solid #e8e8e8;
+}
+nav ul:before,
+nav ul:after {
+  display: table;
+  content: "";
+}
+nav ul:after {
+  clear: both;
+}
+nav ul li {
+  float: left;
+  padding: 0 0 10px 0;
+  position: relative;
+  outline: none;
+  line-height: 1.2em;
+  padding: 0 1px 0 0;
+  border-left: 1px solid #e8e8e8;
+  list-style: none;
+}
+nav ul li.hasChildren a span {
+  padding: 0 20px 0 0;
+  background: url(/demo/responsive-nav/img/sprite.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  display: block;
+}
+nav ul li.hasChildren a:hover span,
+nav ul li.hasChildren.hover a span {
+  background-position: right -50px;
+}
+nav ul a {
+  padding: 15px 20px 15px 20px;
+  font-weight: normal;
+  float: left;
+  display: block;
+  zoom: 1;
+}
+nav ul a:link,
+nav ul a:visited {
+  color: #666;
+  text-decoration: none;
+  background-color: #f8f8f8;
+  background-image: -moz-linear-gradient(top, #ffffff, #ededed);
+  background-image: -ms-linear-gradient(top, #ffffff, #ededed);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ededed));
+  background-image: -webkit-linear-gradient(top, #ffffff, #ededed);
+  background-image: -o-linear-gradient(top, #ffffff, #ededed);
+  background-image: linear-gradient(top, #ffffff, #ededed);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+}
+nav ul a:hover,
+nav ul a:active {
+  color: #a67b45;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  background-image: -moz-linear-gradient(top, #ededed, #ffffff);
+  background-image: -ms-linear-gradient(top, #ededed, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ededed), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #ededed, #ffffff);
+  background-image: -o-linear-gradient(top, #ededed, #ffffff);
+  background-image: linear-gradient(top, #ededed, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff', GradientType=0);
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  outline: none;
+}
+nav ul a:active {
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
+}
+#menu li:hover > ul {
+  display: block;
+}
+#menu li:hover > a {
+  color: #a67b45;
+}
+nav li ul {
+  display: none;
+  margin: 0;
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  width: 130px;
+  border: none !important;
+  padding: 2px;
+  background: #999;
+  z-index: 1000;
+  *zoom: 1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+nav li ul:before,
+nav li ul:after {
+  display: table;
+  content: "";
+}
+nav li ul:after {
+  clear: both;
+}
+nav li ul a {
+  float: none;
+}
+nav li ul li {
+  width: 130px;
+  display: block;
+  border-top: 1px solid #cfcfcf;
+  border-left: none !important;
+}
+nav li ul li.hasChildren a > span {
+  background: url(/demo/responsive-nav/img/sprite.png);
+  background-position: right -97px !important;
+  background-repeat: no-repeat;
+}
+nav li ul li.hasChildren a:hover > span,
+nav li ul li.hasChildren.hover > a span {
+  background-position: right -138px !important;
+}
+.rgba nav li > ul {
+  padding: 10px;
+  left: -10px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+nav li ul li ul {
+  display: none;
+  left: 130px !important;
+  top: -3px;
+}
+.rgba nav li ul li ul {
+  top: -10px;
+}
+.rgba nav li > ul {
+  margin-top: -1px;
+}
