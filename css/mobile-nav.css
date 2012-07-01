@@ -65,11 +65,12 @@ nav .btn-navbar.active .icon-bar {
 .btn-navbar .icon-bar + .icon-bar {
   margin-top: 3px;
 }
-/* The unordered list with the menu */
+/* Using the touch scrolling on capable devices. */
 .overthrow-enabled .overthrow {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+/* The unordered list with the menu */
 ul#menu {
   background: #000;
   display: none;
@@ -83,9 +84,6 @@ ul#menu {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-ul#menu  > * {
-  -webkit-transform: translatez(0px);
 }
 ul#menu li {
   display: block;

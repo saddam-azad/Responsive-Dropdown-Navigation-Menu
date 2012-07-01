@@ -54,12 +54,13 @@ nav .btn-navbar.active .icon-bar {
   margin-top: 3px;
 }
 
-/* The unordered list with the menu */
+/* Using the touch scrolling on capable devices. */
 .overthrow-enabled .overthrow {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
 
+/* The unordered list with the menu */
 ul#menu {
 	background: #000;
 	display: none;
@@ -70,19 +71,12 @@ ul#menu {
  	width: 100%;
  	font-size: 15px !important;	
 	
-//	overflow: auto;
-//	-webkit-overflow-scrolling: touch;
-
 	overflow-x: hidden;
 	-ms-overflow-x: hidden;
 	
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-
-	& > * {
-	    -webkit-transform: translateZ(0px);
-	}
 
 	li {
 		display: block;

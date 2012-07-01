@@ -23,6 +23,20 @@ body {
   overflow: auto;
   max-width: 1300px;
 }
+a:link,
+a:visited {
+  color: #666;
+  text-decoration: underline;
+}
+a:hover,
+a:active {
+  color: #a67b45;
+  text-decoration: none;
+  outline: none;
+}
+a:active {
+  color: #ff6000;
+}
 /* Le Header */
 header {
   padding: 20px 0;
@@ -35,11 +49,11 @@ header {
 header h1#branding a {
   font-family: "Euphoria Script", cursive;
   font-weight: normal;
-  text-decoration: none;
 }
 header h1#branding a:link,
 header h1#branding a:visited {
   color: #000;
+  text-decoration: none;
 }
 header h1#branding a:hover,
 header h1#branding a:active {
@@ -52,7 +66,6 @@ header h2#tagline {
   font-weight: normal;
   text-transform: uppercase;
   color: #444;
-  font-family: Lato, sans-serif;
 }
 header nav {
   background-color: #f8f8f8;
@@ -67,7 +80,7 @@ header nav {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  font-family: Lato, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
 }
 header ul#menu {

@@ -6,7 +6,8 @@ header h1#branding {
   z-index: 1000;
 }
 header h2#tagline {
-  font-size: 1.9em;
+  font-size: 2em;
+  line-height: 1.5em;
   margin: 40px 0 0 0;
 }
 section.content p {

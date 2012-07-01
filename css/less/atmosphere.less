@@ -14,6 +14,26 @@ body {
 	overflow: auto;
 	max-width: 1300px;
 	}
+	
+a {
+
+	&:link,
+	&:visited {
+		color: #666;
+		text-decoration: underline;
+		}
+	
+	&:hover,
+	&:active {
+		color: #a67b45;
+		text-decoration: none;
+		outline: none;
+		}
+	&:active {
+		color: #ff6000;
+		}
+
+}
 
 
 /* Le Header */
@@ -24,11 +44,11 @@ header {
 	h1#branding a {
 		font-family: "Euphoria Script", cursive;
 		font-weight: normal;
-		text-decoration: none;
 		
 		&:link,
 		&:visited {
 			color: #000;
+			text-decoration: none;
 			}
 		
 		&:hover,
@@ -44,14 +64,13 @@ header {
 		font-weight: normal;
 		text-transform: uppercase;
 		color: #444;
-		font-family: Lato, sans-serif;
 		}
 	
 	/* The common properties in the NAV element */
 	nav {
 		#gradient .vertical(#fff, #ededed);
 		.box-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
-		font-family: Lato, sans-serif;
+		font-family: "Lato", Helvetica, Arial, sans-serif;
 		font-size: 1.5em;
 		}
 	
